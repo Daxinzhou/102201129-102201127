@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+    <div class="login-container">
+        <div class="identity-selector">
+            <h2>请选择你的身份</h2>
+            <button id="teacher-btn">老师</button>
+            <button id="student-btn">学生</button>
+        </div>
+        <div class="login-form" id="login-form" style="display: none;">
+            <input type="text" id="identity-number" placeholder="请输入工号/学号">
+            <input type="text" id="email" placeholder="请输入邮箱">
+            <input type="text" id="field" placeholder="请输入专业/方向">
+            <button id="login-btn">登录</button>
+        </div>
+    </div>
+</body>
+</html>

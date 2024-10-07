@@ -1,0 +1,68 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.project-form {
+    padding: 20px;
+    max-width: 600px; /* 限制最大宽度 */
+    margin: auto;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#selected-mentor {
+    font-size: 16px;
+    color: #007BFF;
+}
+
+.form-item {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item label {
+    margin-bottom: 5px;
+}
+
+.form-item input,
+.form-item select,
+.form-item textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submit-project, #invite-mentor-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#submit-project:hover, #invite-mentor-btn:hover {
+    background-color: #218838;
+}
+
+#back-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-btn:hover {
+    background-color: #5a6268;
+}

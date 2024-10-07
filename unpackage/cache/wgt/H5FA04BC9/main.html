@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>主页面</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+    <div class="tab-bar">
+        <button class="tab-button active" id="projects-tab">项目</button>
+        <button class="tab-button" id="chat-tab">聊天</button>
+        <button class="tab-button" id="personal-tab">个人</button>
+    </div>
+    <div id="projects-page" class="page active">
+        <!-- 在这里添加 iframe 以显示网址内容 -->
+        <iframe src="https://imooc.com" id="external-content-frame" style="width: 100%; border: none;"></iframe>
+        <button id="start-project-btn">发起项目</button>
+        <!-- 项目列表 -->
+        <div class="projects-list">
+            <!-- 项目项 -->
+        </div>
+    </div>
+    <div id="chat-page" class="page">
+        <iframe src="chat.html" style="width: 100%; height: 100%; border: none;" id="chat-frame"></iframe>
+    </div>
+    <div id="personal-page" class="page">
+        <iframe src="personal.html" style="width: 100%; height: 100%; border: none;"></iframe>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

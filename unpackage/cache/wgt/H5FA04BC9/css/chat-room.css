@@ -1,0 +1,77 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.chat-room-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#chat-partner-name {
+    font-size: 16px;
+    color: #333;
+}
+
+.chat-input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 新增：使得子元素在主轴方向上居中 */
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ddd; /* 根据需要调整边框 */
+    position: fixed; /* 固定定位 */
+    bottom: 70px; /* 距离底部50px的位置，您可以根据需要调整这个值 */
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    z-index: 500;
+}
+
+.message-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.message {
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+#send-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#send-btn:hover {
+    background-color: #218838;
+}

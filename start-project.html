@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>发起项目</title>
+    <link rel="stylesheet" type="text/css" href="css/start-project.css" />
+</head>
+<body>
+    <div class="project-form">
+        <div class="form-header">
+            <button id="back-btn">返回</button>
+            <div id="selected-mentor">尚未选择导师</div>
+        </div>
+        <div class="form-item">
+            <label for="project-name">项目名称</label>
+            <input type="text" id="project-name" placeholder="请输入">
+        </div>
+        <div class="form-item">
+            <label for="project-type">项目类型</label>
+            <select id="project-type">
+                <option value="academic">学术</option>
+                <option value="entrepreneurship">创业</option>
+            </select>
+        </div>
+        <div class="form-item">
+            <label for="project-initiator">项目发起人</label>
+            <input type="text" id="project-initiator" placeholder="请输入">
+        </div>
+        <div class="form-item">
+            <label for="initiator-major">发起人专业</label>
+            <input type="text" id="initiator-major" placeholder="请输入">
+        </div>
+        <div class="form-item">
+            <label for="project-description">项目描述</label>
+            <textarea id="project-description" placeholder="请输入"></textarea>
+        </div>
+        <div class="form-item">
+            <label for="required-professional">需要的专业人才</label>
+            <input type="text" id="required-professional" placeholder="请输入">
+        </div>
+        <div class="form-item">
+            <label for="project-advantage">项目优势</label>
+            <textarea id="project-advantage" placeholder="请输入"></textarea>
+        </div>
+        <button type="submit" id="invite-mentor-btn">邀请导师</button>
+        <button type="submit" id="submit-project">提交</button>
+    </div>
+    <script type="text/javascript" src="js/start-project.js"></script>
+</body>
+</html>
